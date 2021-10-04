@@ -7,7 +7,7 @@ export default function Metamask() {
 	return (
 		<>
 			<Button
-				// disabled={true}
+				disabled={true}
 				rounded={"lg"}
 				bg="#175fe6"
 				color={"white"}

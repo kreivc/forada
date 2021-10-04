@@ -75,13 +75,13 @@ export default function SplitScreen() {
 				</Flex>
 				<Flex flex={1} data-aos="slide-right">
 					<Box
-						w={{ base: "320px", lg: "500px" }}
-						h={{ base: "320px", lg: "500px" }}
+						w={{ base: "300px", lg: "500px" }}
+						h={{ base: "300px", lg: "500px" }}
 						d="flex"
 						alignItems="center"
 					>
 						{/* <Image alt={"Login Image"} objectFit={"cover"} src={AboutPic} /> */}
-						<Box ref={container} w="500px"></Box>
+						<Box ref={container} w={{ base: "400px", md: "500px" }} />
 					</Box>
 				</Flex>
 			</Stack>

@@ -4,12 +4,13 @@ import {
 	HStack,
 	Flex,
 	IconButton,
-	useColorModeValue,
 	useDisclosure,
 	CloseButton,
 	VStack,
 	Button,
 	Text,
+	Image,
+	Box,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
@@ -114,20 +115,20 @@ export default function Header() {
 						<Flex align="flex-start">
 							<Link to="/" smooth={true} duration={500} spy={true} exact="true">
 								<HStack>
-									{/* <Image
-										src={Logo}
-										alt="logo_adaconda"
+									<Image
+										src={scrollNav ? "/flet.png" : "/flet2.png"}
+										alt={scrollNav ? "logoForada" : "logoForada2"}
 										width="140"
 										height="50"
 										objectFit="cover"
-									/> */}
-									<Text
+									/>
+									{/* <Text
 										fontSize="lg"
 										fontWeight="bold"
 										color={scrollNav ? "black" : "white"}
 									>
 										Forada
-									</Text>
+									</Text> */}
 								</HStack>
 							</Link>
 						</Flex>
@@ -141,7 +142,7 @@ export default function Header() {
 									exact="true"
 								>
 									<Button
-										color={scrollNav ? "#020bff" : "white"}
+										color={scrollNav ? "#1969ff" : "white"}
 										display="inline-flex"
 										alignItems="center"
 										fontSize="md"
@@ -160,7 +161,7 @@ export default function Header() {
 									exact="true"
 								>
 									<Button
-										color={scrollNav ? "#020bff" : "white"}
+										color={scrollNav ? "#1969ff" : "white"}
 										display="inline-flex"
 										alignItems="center"
 										fontSize="md"
@@ -179,7 +180,7 @@ export default function Header() {
 									exact="true"
 								>
 									<Button
-										color={scrollNav ? "#020bff" : "white"}
+										color={scrollNav ? "#1969ff" : "white"}
 										display="inline-flex"
 										alignItems="center"
 										fontSize="md"
@@ -198,7 +199,7 @@ export default function Header() {
 									exact="true"
 								>
 									<Button
-										color={scrollNav ? "#020bff" : "white"}
+										color={scrollNav ? "#1969ff" : "white"}
 										display="inline-flex"
 										alignItems="center"
 										fontSize="md"
@@ -220,8 +221,8 @@ export default function Header() {
 									rounded="full"
 									variant="solid"
 									fontSize="medium"
-									color={scrollNav ? "white" : "#020bff"}
-									bg={scrollNav ? "#020bff" : "gray.100"}
+									color={scrollNav ? "white" : "#1969ff"}
+									bg={scrollNav ? "#1969ff" : "gray.100"}
 									_hover={{
 										bg: scrollNav ? "#1969ff" : "gray.200",
 									}}

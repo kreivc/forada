@@ -42,7 +42,7 @@ export default function Hero() {
 							bgGradient="linear(to-r, #4CBFF8, #41DFFF)"
 							fontWeight="extrabold"
 						>
-							$Forada,
+							$ForAda,
 						</Text>{" "}
 						for all you need.
 					</chakra.h1>
