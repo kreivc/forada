@@ -8,9 +8,8 @@ import {
 	CloseButton,
 	VStack,
 	Button,
-	Text,
 	Image,
-	Box,
+	Text,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
@@ -70,7 +69,7 @@ export default function Header() {
 			</Link>
 			<Link to="timeline" smooth={true} duration={500} spy={true} exact="true">
 				<Button w="full" variant="ghost" onClick={mobileNav.onClose}>
-					Timeline
+					Roadmap
 				</Button>
 			</Link>
 			<Link to="howtobuy" smooth={true} duration={500} spy={true} exact="true">
@@ -122,13 +121,13 @@ export default function Header() {
 										height="50"
 										objectFit="cover"
 									/>
-									{/* <Text
+									<Text
 										fontSize="lg"
 										fontWeight="bold"
-										color={scrollNav ? "black" : "white"}
+										color={scrollNav ? "#1969ff" : "white"}
 									>
-										Forada
-									</Text> */}
+										ForAda
+									</Text>
 								</HStack>
 							</Link>
 						</Flex>
@@ -188,7 +187,7 @@ export default function Header() {
 										_focus={{ boxShadow: "none" }}
 										_hover={scrollNav ? { bg: "gray.100" } : { bg: "#020bff" }}
 									>
-										Timeline
+										Roadmap
 									</Button>
 								</Link>
 								<Link
@@ -238,6 +237,8 @@ export default function Header() {
 								variant="ghost"
 								icon={<AiOutlineMenu />}
 								onClick={mobileNav.onOpen}
+								_hover={{ bg: "transparent" }}
+								_active={{ bg: "transparent" }}
 							/>
 						</Flex>
 					</Flex>

@@ -6,3 +6,99 @@ body {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	overflow-x: hidden;
 }
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+.timeline {
+	background: #f6f9fc;
+	font-size: 16px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+	font-weight: 700;
+	padding: 50px 0;
+	text-align: center;
+	color: #1969ff;
+}
+
+.title3 {
+	padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+		0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+	padding: 2em 3em !important;
+}
+
+.date {
+	color: rgb(201, 251, 255);
+}
+
+#description {
+	margin: 1.5em 0 2em 0;
+}
+
+#descriptionR {
+	margin: 0;
+}
+
+#descriptionRE {
+	margin: 0 0 2em 0;
+}
+
+.button {
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
+
+.cms {
+	background-color: #1969ff;
+	font-weight: 600;
+}
+
+.success {
+	background-color: #01bf71;
+	font-weight: 600;
+}
+
+.schoolButton:hover {
+	background-color: #21d4d4;
+}
+
+.iconQ {
+	color: white;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1700px) {
+	.vertical-timeline-element-date {
+		display: block !important;
+		float: none !important;
+		color: rgb(44, 44, 44);
+		margin-top: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.title {
+		font-size: 3.2em;
+	}
+	.vertical-timeline-element-content {
+		width: 80%;
+	}
+	.iconQ {
+		font-size: 1.2rem;
+	}
+}

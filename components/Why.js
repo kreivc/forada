@@ -10,13 +10,13 @@ export default function Why() {
 			renderer: "svg",
 			loop: true,
 			autoplay: true,
-			animationData: require("../assets/bullishcat.json"),
+			animationData: require("../assets/upchartwait.json"),
 		});
 	}, []);
 
 	return (
-		<Box h="100vh" p={{ base: "10", md: "20" }}>
-			<VStack px={{ base: "0", md: "44" }}>
+		<Box h="100vh" p={{ base: "10", md: "20" }} id="why">
+			<VStack px={{ base: "0", md: "44" }} data-aos="zoom-in">
 				<Text color="#1969ff" fontWeight="semibold" fontSize="lg">
 					Why Forada
 				</Text>
@@ -33,7 +33,7 @@ export default function Why() {
 					money that will be received in the marketing wallet for post launch
 					investments.
 				</Text>
-				<Box ref={container} w="300px"></Box>
+				<Box ref={container} w={{ base: "400px", md: "500px" }} pr="14"></Box>
 			</VStack>
 		</Box>
 	);
