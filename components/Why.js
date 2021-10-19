@@ -25,10 +25,10 @@ export default function Why() {
 					fontWeight="bold"
 					fontSize={{ base: "2xl", md: "4xl" }}
 				>
-					Speed, security, scalability
+					Speed, Security, Scalability
 				</Text>
 				<Text color="#516172" fontWeight="semibold" fontSize="md" py="5">
-					We have a full marketing and visibility campgain mapped out of which
+					We have a full marketing and visibility campaign mapped out of which
 					we will make investements pre launch and boost our efforts with the
 					money that will be received in the marketing wallet for post launch
 					investments.

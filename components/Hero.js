@@ -14,6 +14,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { HiCursorClick } from "react-icons/hi";
 import { ImArrowRight2 } from "react-icons/im";
 import { Link } from "react-scroll";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function Hero() {
 	const metamaskBtn = false;
@@ -96,22 +97,29 @@ export default function Hero() {
 								</Icon>
 							</Button>
 						</Link>
-						<Button
-							as="a"
-							colorScheme="gray"
-							display="inline-flex"
-							alignItems="center"
-							justifyContent="center"
-							w={{ base: "full", sm: "auto" }}
-							mb={{ base: 2, sm: 0 }}
-							size="lg"
-							cursor="pointer"
-						>
-							Not Released yet
-							<Icon boxSize={5} ml={1} viewBox="0 0 20 20" fill="currentColor">
-								<HiCursorClick />
-							</Icon>
-						</Button>
+						<CopyToClipboard text="Not Released yet">
+							<Button
+								// as="a"
+								// colorScheme="gray"
+								display="inline-flex"
+								alignItems="center"
+								justifyContent="center"
+								w={{ base: "full", sm: "auto" }}
+								mb={{ base: 2, sm: 0 }}
+								size="lg"
+								cursor="pointer"
+							>
+								Not Released yet
+								<Icon
+									boxSize={5}
+									ml={1}
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<HiCursorClick />
+								</Icon>
+							</Button>
+						</CopyToClipboard>
 					</Stack>
 				</Box>
 				<Box
